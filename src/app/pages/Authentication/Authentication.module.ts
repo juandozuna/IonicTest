@@ -1,10 +1,10 @@
-import { LoginPageComponent } from './LoginPage/LoginPage.component';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthenticationLayoutComponent } from './authentication-layout/authentication-layout.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 const routes: Routes = [
@@ -29,7 +29,8 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   declarations: [
-    AuthenticationLayoutComponent
+    AuthenticationLayoutComponent,
+    LoginPageComponent
   ]
 })
 export class AuthenticationModule { }
